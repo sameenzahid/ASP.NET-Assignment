@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        .nay{
+            padding:03px;
+            height:60px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+               <nav class="navbar navbar-default" style="background-color:#e62525;">
+  <div>
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="color:white;">Food Ordering System</a>
+    </div>
+                   <div>
+    <ul class="nav navbar-nav nay" style="float:right; color:white;">
+      <li><a href="WebForm1.aspx" style="color:white;">Home</a></li>
+        <li><a href="WebForm2.aspx" style="color:white;">Menu</a></li>
+      <li><a href="WebForm5.aspx" style="color:white;">Order</a></li>
+      <li><a href="WebForm3.aspx" style="color:white;">Login</a></li>
+        <li><a href="WebForm4.aspx" style="color:white;">Register</a></li>
+    </ul>
+  </div>
+      </div>
+</nav>
+        <img src="Red Yellow Modern Fast Food Facebook Ad.jpg" width="100%" height="350px" />
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </div>
+             <br />
+ <table border="2" style="width:100%; background-color:#e62525;" height="60px">
+            <tr>
+                <td align="center"><font color="white">Designed By - Sameen Zahid</font></td>
+            </tr>
+     </table>
+    </form>
+</body>
+</html>
